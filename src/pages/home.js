@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import SkeletonList from "../components/skeleton/skeletonList";
 
 const Home = () => {
-    const { data: series, isLoading, error } = useFetch('https://hiperdex-scrapper.vercel.app/api/latest/1');
+    const { data: series, isLoading, error } = useFetch('https://manhwa-scraper-api.vercel.app/api/latest/1');
     
     return (
         <div className="latest">
