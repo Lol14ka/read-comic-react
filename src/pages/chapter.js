@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 
 const Chapter = () => {
     const { series, ch } = useParams();
-    const { data: chapter, error, isLoading } = useFetch('https://hiperdex-scrapper.vercel.app/api/chapter/' + series + '/' + ch);
+    const { data: chapter, error, isLoading } = useFetch('https://manhwa-scraper-api.vercel.app/api/chapter/' + series + '/' + ch);
 
     return (
         <div className="chapter-view">
