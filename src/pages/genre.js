@@ -8,7 +8,7 @@ import NotFoundPages from "../components/notFoundPages";
 
 const Genre = () => {
     const { genre, pages } = useParams();
-    const { data: series, isLoading, error } = useFetch('https://hiperdex-scrapper.vercel.app/api/genre/' + genre  + '/' + pages);
+    const { data: series, isLoading, error } = useFetch('https://manhwa-scraper-api.vercel.app/api/genre/' + genre  + '/' + pages);
     
     return (
         <div className="all-list">
