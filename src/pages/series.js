@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 
 const Series = () => {
     const { slug } = useParams();
-    const { data: series, error, isLoading } = useFetch('https://hiperdex-scrapper.vercel.app/api/info/' + slug);
+    const { data: series, error, isLoading } = useFetch('https://manhwa-scraper-api.vercel.app/api/info/' + slug);
 
     return (
         <div className="series">
