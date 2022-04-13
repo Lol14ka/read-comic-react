@@ -8,7 +8,7 @@ import NotFoundPages from "../components/notFoundPages";
 
 const Completed = () => {
     const { pages } = useParams();
-    const { data: series, isLoading, error } = useFetch('https://hiperdex-scrapper.vercel.app/api/completed/' + pages);
+    const { data: series, isLoading, error } = useFetch('https://manhwa-scraper-api.vercel.app/api/completed/' + pages);
     
     return (
         <div className="all-list">
