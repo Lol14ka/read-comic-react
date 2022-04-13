@@ -39,7 +39,7 @@ const ChapterViewer = ({ chapter, slug }) => {
                         {navi.map((nav, index) => (
                             <div className="navi-chapter" key={index}>
                                 {nav.prev && (
-                                    <Link to={nav.prev.replace('https://hiperdex.com/manga','/chapter')}>
+                                    <Link to={nav.prev.replace('https://manhwa-scraper-api.vercel.app/api','/chapter')}>
                                     <span className="prev"><FontAwesomeIcon icon={faArrowLeft} /> Prev</span>
                                     </Link>
                                 )}
@@ -47,7 +47,7 @@ const ChapterViewer = ({ chapter, slug }) => {
                                     <span className="all-chapter">View All Chapters</span>
                                 </Link>
                                 {nav.next && (
-                                    <Link to={nav.next.replace('https://hiperdex.com/manga','/chapter')}>
+                                    <Link to={nav.next.replace('https://manhwa-scraper-api.vercel.app/api','/chapter')}>
                                         <span className="prev">Next <FontAwesomeIcon icon={faArrowRight} /></span>
                                     </Link>
                                 )}
@@ -64,7 +64,7 @@ const ChapterViewer = ({ chapter, slug }) => {
                     {navi.map((nav, index) => (
                         <div className="navi-chapter" key={index}>
                             {nav.prev && (
-                                <Link to={nav.prev.replace('https://hiperdex.com/manga','/chapter')}>
+                                <Link to={nav.prev.replace('https://manhwa-scraper-api.vercel.app/api','/chapter')}>
                                 <span className="prev"><FontAwesomeIcon icon={faArrowLeft} /> Prev</span>
                                 </Link>
                             )}
@@ -72,7 +72,7 @@ const ChapterViewer = ({ chapter, slug }) => {
                                 <span className="all-chapter">View All Chapters</span>
                             </Link>
                             {nav.next && (
-                                <Link to={nav.next.replace('https://hiperdex.com/manga','/chapter')}>
+                                <Link to={nav.next.replace('https://manhwa-scraper-api.vercel.app/api','/chapter')}>
                                     <span className="prev">Next <FontAwesomeIcon icon={faArrowRight} /></span>
                                 </Link>
                             )}
